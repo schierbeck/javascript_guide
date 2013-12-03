@@ -108,6 +108,13 @@
 		var my_local_variable = "Denna variabel är lokal och nås inte utanför funktionen (sanning med modifikation)";
 	}
 
+//// Exempel 2 =====================================================================================
+
+	// Det går bra att komma-separera variabler om man skriver ut dessa efter varandra. Även radbyte
+	// är godkänt.
+
+	var first = 1, second = 2,
+	third = 3;
 
 /* =================================================================================================
 !FUNKTIONER
