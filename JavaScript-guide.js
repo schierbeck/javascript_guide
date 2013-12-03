@@ -3,68 +3,68 @@
 ================================================================================================= */
 
 	// !Arithmetic Operators
-	"Addition"					"+"				// x + y
-	"Subtraction"				"-"				// x - y
-	"Multiplication"			"*"				// x * y
-	"Division"					"/"				// x / y
-	"Modulus"					"%"				// 17 % 3 = 2
-	"Increment"					"++"			// x+1 fungerar också
-	"Decrement"					"--"			// x-1 fungerar ocksp
-	"Unary negation"			"-"				// -3
+	"Addition"					+				// x + y
+	"Subtraction"				-				// x - y
+	"Multiplication"			*				// x * y
+	"Division"					/				// x / y
+	"Modulus"					%				// 17 % 3 = 2
+	"Increment"					++				// Samma som +1
+	"Decrement"					--				// Samma som -1
+	"Unary negation"			-				// Negativa tal (-5)
 
 	// !Assignment Operators
-	"Assign"					"="				// x = y
-	"Addition assign"			"+="			// x += y (x = x + y)
-	"Subtraction assign"		"-="			// x -= y (x = x - y)
-	"Multiplication assign"		"*="			// x *= y (x = x * y)
-	"Division assign"			"/="			// x /= y (x = x / y)
-	"Modulus assign"			"%="			// x %= y (x = x % y)
+	"Assign"					=				// x = y
+	"Addition assign"			+=				// x += y (x = x + y)
+	"Subtraction assign"		-=				// x -= y (x = x - y)
+	"Multiplication assign"		*=				// x *= y (x = x * y)
+	"Division assign"			/=				// x /= y (x = x / y)
+	"Modulus assign"			%=				// x %= y (x = x % y)
 
 	// !Comparison operators
-	"Equal" 					"=="			// 1 == "1" (true)
-	"Strict equal" 				"==="			// 1 === "1" (false)
-	"Not equal"					"!="			// 1 != 1 (false)
-	"Strict not equal"			"!=="			// 1 !== 2 (true)
-	"Greater than"				">"				// 1 > 2 (false)
-	"Less than"					"<"				// 1 < 2 (true)
-	"Greater than or equal"		">="			// 2 >= 1 (true)
-	"Less than or equal"		"<="			// 1 <= 1 (true)
+	"Equal" 					==				// 1 == "1" (true)
+	"Strict equal" 				===				// 1 === "1" (false)
+	"Not equal"					!=				// 1 != 1 (false)
+	"Strict not equal"			!==				// 1 !== 2 (true)
+	"Greater than"				>				// 1 > 2 (false)
+	"Less than"					<				// 1 < 2 (true)
+	"Greater than or equal"		>=				// 2 >= 1 (true)
+	"Less than or equal"		<=				// 1 <= 1 (true)
 
 	// !Logical operators
-	"And"						"&&"			// if( 3 > 2 && 1 < 3)
-	"Or"						"||"			// 5 || 2 > 3 (true)
-	"Not"						"!"				// !2 === 3) (true)
+	"And"						&&				// if( 3 > 2 && 1 < 3)
+	"Or"						||				// 5 || 2 > 3 (true)
+	"Not"						!				// !2 === 3) (true)
 
-	// ??? Special operators
-	"Conditional"				"? :"			//(x >= 10) ? "Stämmer" : "Stämmer inte";
-	"Comma"						","				// var x = 5, y = 10, z = "5";
-	delete					// delete x (true), Array-exempel: delete arr[3] plats [3] försvinner samt true
-	in 						// 0 in array (Om plats 0 finns = true)
-	instanceof				// today instanceof Date, if today is an instance of Date object = true
-	new 					// Array, Boolean, Date, Function, Image, Number, Object, Option, RegExp, or String
-	this 					// Refers to current object
-	typeof()				// x = number, z = string
-	void()					// void(5) = undefined
+	// Special operators
+	"Conditional"				? :				//(x >= 10) ? "Stämmer" : "Stämmer inte";
+	"Comma"						,				// var x = 5, y = 10, z = "5";
+	delete										// delete x (true), Array-exempel: delete arr[3] plats [3] försvinner samt true
+	in 							// 0 in array (Om plats 0 finns = true)
+	instanceof					// today instanceof Date, if today is an instance of Date object = true
+	new 						// Array, Boolean, Date, Function, Image, Number, Object, Option, RegExp, or String
+	this 						// Refers to current object
+	typeof()					// x = number, z = string
+	void()						// void(5) = undefined
 
-	null 					// a == null (true)
+	null 						// a == null (true)
 
-	getElementById()		// document.getEmelemtByID("myID")
-	getElementByClassName()	// document.getElementByClassName("myClass")
-	getElementsByTagName() 	// document.getElementsByTagName("input")
-	getElementByName()		// document.getElementByName("username")
-
-
-	parseInt()				// parseInt(z) -> typeof(z) -> (number)
-	parseFloat()			// parseInt(z) -> typeof(z) -> (number)
-	Number()				// Fungerar i stort som parseFloat. Bra tråd om det här: http://goo.gl/Xg03iZ
-	String()				// String(5) = "5"
+	getElementById()			// document.getEmelemtByID("myID")
+	getElementByClassName()		// document.getElementByClassName("myClass")
+	getElementsByTagName() 		// document.getElementsByTagName("input")
+	getElementByName()			// document.getElementByName("username")
 
 
-	isNaN()					// Om inte nummer (även inom sträng) = true
-	decodeURI()				// decodeURI("http://Bj%C3%B6rk_Gu%C3%B0mundsd%C3%B3ttir.se") = http://Björk_Guðmundsdóttir.se
-	decodeURIComponent() 	// decodeURIComponent("Bj%C3%B6rk%20Gu%C3%B0mundsd%C3%B3ttir") = Björk Guðmundsdóttir
-	encodeURI()				// encodeURI("http://Björk_Guðmundsdóttir.se") = http://Bj%C3%B6rk_Gu%C3%B0mundsd%C3%B3ttir.se
-	encodeURIComponent() 	// encodeURIComponent("Björk Guðmundsdóttir") = Bj%C3%B6rk%20Gu%C3%B0mundsd%C3%B3ttir
+	parseInt()					// Rundar av nedåt, 1.9 blir 1 som int, parseInt(z) -> typeof(z) -> (number)
+	parseFloat()				// parseFloat(z) -> typeof(z) -> (number)
+	Number()					// Fungerar i stort som parseFloat. Bra tråd om det här: http://goo.gl/Xg03iZ
+	String()					// String(5) = "5"
+
+
+	isNaN()						// Om inte nummer (även inom sträng) = true
+	decodeURI()					// decodeURI("http://Bj%C3%B6rk_Gu%C3%B0mundsd%C3%B3ttir.se") = http://Björk_Guðmundsdóttir.se
+	decodeURIComponent() 		// decodeURIComponent("Bj%C3%B6rk%20Gu%C3%B0mundsd%C3%B3ttir") = Björk Guðmundsdóttir
+	encodeURI()					// encodeURI("http://Björk_Guðmundsdóttir.se") = http://Bj%C3%B6rk_Gu%C3%B0mundsd%C3%B3ttir.se
+	encodeURIComponent() 		// encodeURIComponent("Björk Guðmundsdóttir") = Bj%C3%B6rk%20Gu%C3%B0mundsd%C3%B3ttir
 
 	// isFinite()
 	// eval()
@@ -78,7 +78,8 @@
 	var string = "Tecken inom fnuttar";
 
 	// Nummer - typeof() = number
-	var numb = 1234;
+	var numb = 1234; // Int
+	var numb = 12.34; // Float
 
 	// Boolean - typeof() = boolean
 	var thumb_up = true;
@@ -93,10 +94,10 @@
 	// De två variabeltyperna nedan räknas oftast inte in som variabeltyper men passar ändå in på beskrivningen.
 
 	// Null - typeof() = object
-	var namn = null; // Variabeln har blivit deklarerad värdet null, dvs den vet om att den är tom.
+	var name = null; // Variabeln har blivit deklarerad värdet null, dvs den vet om att den är tom.
 
 	// Undefined - typeof() = undefined
-	var namn = undefined; // Variabeln har blivit deklarerad men inte blivit tilldelad ett värde.
+	var name; // Variabeln har blivit deklarerad men inte blivit tilldelad ett värde.
 
 
 //// Exempel 1 =====================================================================================
@@ -213,8 +214,9 @@ var myFunc = function() {};
 
 //// Exempel 1 =====================================================================================
 
+	// Vi skapar en array
 	var nameArr = ['Stina', 'Lasse', 'Bolten'];
-
+	// Så länge i är mindre än längden på arrayen = Kör loopen och lägg till +1 på i
 	for(var i = 0; i < nameArr.length; i++) {
 		console.log('Namn: ' + nameArr[i]);
 	}
@@ -224,16 +226,16 @@ var myFunc = function() {};
 
 	// Vi skapar ett objekt
 	var family = {
-		"person": [ // Array i objektet
+		"members": [ // Array i objektet
 			{ "firstname": "Stina", "age": 37 }, // Objekt i arrayen
 			{ "firstname": "Lasse", "age": 35 }	// Objekt i arrayen
-		],
+		]
 	};
-	// För alla key i family.person Stina och Lasse)
-	for( var key in family.person ) {
-		var p = family.person; // Variabel för att inte behöva skriva ut family.person hela tiden, döp till valfritt
+	// För alla key i family.members Stina och Lasse)
+	for( var person in family.members ) {
+		var m = family.members; // Variabel för att inte behöva skriva ut family.person hela tiden, döp till valfritt
 
-		console.log(p[key].firstname + " är " + p[key].age + " år gammal.");
+		console.log( m[person].firstname + " är " + m[person].age + " år gammal." );
 	}
 
 
