@@ -56,8 +56,10 @@
 
 	parseInt()				// parseInt(z) -> typeof(z) -> (number)
 	parseFloat()			// parseInt(z) -> typeof(z) -> (number)
-	Number()				// Fungerar i stort som parseInt. Bra tråd om det här: http://goo.gl/Xg03iZ
+	Number()				// Fungerar i stort som parseFloat. Bra tråd om det här: http://goo.gl/Xg03iZ
 	String()				// String(5) = "5"
+
+
 	isNaN()					// Om inte nummer (även inom sträng) = true
 	decodeURI()				// decodeURI("http://Bj%C3%B6rk_Gu%C3%B0mundsd%C3%B3ttir.se") = http://Björk_Guðmundsdóttir.se
 	decodeURIComponent() 	// decodeURIComponent("Bj%C3%B6rk%20Gu%C3%B0mundsd%C3%B3ttir") = Björk Guðmundsdóttir
@@ -91,10 +93,11 @@
 	// De två variabeltyperna nedan räknas oftast inte in som variabeltyper men passar ändå in på beskrivningen.
 
 	// Null - typeof() = object
-	var nothing = null; // Variabeln har blivit deklarerad värdet null, dvs den vet om att den är tom.
+	var namn = null; // Variabeln har blivit deklarerad värdet null, dvs den vet om att den är tom.
 
 	// Undefined - typeof() = undefined
-	var und = undefined; // Variabeln har blivit deklarerad men inte blivit tilldelad ett värde.
+	var namn = undefined; // Variabeln har blivit deklarerad men inte blivit tilldelad ett värde.
+
 
 //// Exempel 1 =====================================================================================
 
@@ -111,7 +114,7 @@
 
 // Två sätt att skapa en funktion på (båda är ok!)
 
-function myFunction() {}
+function myFunc() {}
 
 var myFunc = function() {};
 
@@ -181,7 +184,7 @@ var myFunc = function() {};
 	// Lägg barba_adults värden i omvänd ordning, så att mama hamnar innan papa.
 	barba_adults.reverse();
 
-	// Sortera barnen i bokstavsordning
+	// Sortera barnen i teckenordning
 	barba_kids.sort();
 
 	// Slå ihop båda arrayerna till en härlig barba_family array. barba_adults står först i den nya array.
@@ -227,7 +230,7 @@ var myFunc = function() {};
 		],
 	};
 	// För alla key i family.person Stina och Lasse)
-	for( key in family.person ) {
+	for( var key in family.person ) {
 		var p = family.person; // Variabel för att inte behöva skriva ut family.person hela tiden, döp till valfritt
 
 		console.log(p[key].firstname + " är " + p[key].age + " år gammal.");
@@ -238,14 +241,13 @@ var myFunc = function() {};
 
 	// For vs While battle! Looparna gör samma sak med små skillnader i syntaxen!
 
-	for( var i = 0; i < 10; i++ ) {
+	for( var i = 11; i > 10; i++ ) {
 		// Do stuff
 	}
 
-	var i = 0;
-	while( i < 10 ) {
+	var i = 11;
+	while( i > 10 ) {
 		// Do stuff
-		i++;
 	}
 
 
@@ -277,7 +279,7 @@ while( array[i] != 'makrill' ) {
 	do { // Will run atleast one time
 		document.write(x);
 		x++;
-	} while (x <= 20);
+	} while (x > 20);
 
 
 /* =================================================================================================
