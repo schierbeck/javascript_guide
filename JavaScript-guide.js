@@ -58,6 +58,7 @@
 	parseFloat()				// parseFloat(z) -> typeof(z) -> (number)
 	Number()					// Fungerar i stort som parseFloat. Bra tråd om det här: http://goo.gl/Xg03iZ
 	String()					// String(5) = "5"
+	toString()					// var x = 5; x.toString() = "5"
 
 
 	isNaN()						// Om inte nummer (även inom sträng) = true
@@ -65,6 +66,19 @@
 	decodeURIComponent() 		// decodeURIComponent("Bj%C3%B6rk%20Gu%C3%B0mundsd%C3%B3ttir") = Björk Guðmundsdóttir
 	encodeURI()					// encodeURI("http://Björk_Guðmundsdóttir.se") = http://Bj%C3%B6rk_Gu%C3%B0mundsd%C3%B3ttir.se
 	encodeURIComponent() 		// encodeURIComponent("Björk Guðmundsdóttir") = Bj%C3%B6rk%20Gu%C3%B0mundsd%C3%B3ttir
+
+	window						// Representerar webbläsarfönstret
+	document 					// Representerar dokumentet, exempelvis index.html. document kan också nås genom window.document
+
+	onclick						// Vid klick på element, document.onclick = function() {alert('Klick!');}
+	ondblclick					// Samma som ovan fast dubbelklick, document.ondblclick = function() {alert('Dubbelklick!');}
+	onmousedown					// När musknappen är nedtryckt (registrerar högerklick, (osx tvåfingerklick)) också
+	onmousemove					// När muspekaren rör sig över elementet
+	onmouseover					// När muspekaren är över objekt (motsvarigheten till jQuerys .hover())
+	onmouseout					// När muspekaren hamnar utanför objekt
+	onmouseup					// När musknappen släpps efter att ha varit nedtryckt
+
+	document.URL				// Returnerar aktiv url
 
 	// isFinite()
 	// eval()
